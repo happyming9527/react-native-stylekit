@@ -1,4 +1,4 @@
-import { Dimensions } from 'react-native'
+import { Dimensions, PixelRatio } from 'react-native'
 export default {
   // overflow
   overflowHidden: { overflow: 'hidden' },
