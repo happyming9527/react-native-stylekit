@@ -1,3 +1,4 @@
+import { Dimensions } from 'react-native'
 export default {
   // overflow
   overflowHidden: { overflow: 'hidden' },
@@ -18,4 +19,7 @@ export default {
   imgCover: { resizeMode: 'cover' },
   imgContain: { resizeMode: 'contain' },
   imgStretch: { resizeMode: 'stretch' },
+
+  // element width
+  fullWidth: { width: Dimensions.get('window').width }
 }

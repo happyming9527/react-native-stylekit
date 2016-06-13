@@ -1,10 +1,13 @@
+let column = { flexDirection: 'column', flexWrap: 'nowrap' }
+let row = { flexDirection: 'row', flexWrap: 'wrap' }
+
 export default {
   // ====================================================
   //  Flex Componets
   // ====================================================
 
-  column: { flexDirection: 'column', flexWrap: 'nowrap' },
-  row: { flexDirection: 'row', flexWrap: 'wrap' },
+  column: column,
+  row: row,
 
   // ====================================================
   // Positioning for Flex Items
@@ -15,19 +18,19 @@ export default {
   topLeft: { alignItems: 'flex-start', justifyContent: 'flex-start' },
   bottomRight: { alignItems: 'flex-end', justifyContent: 'flex-end' },
 
-  columnTopCenter: { alignItems: 'center', justifyContent: 'flex-start' },
-  columnTopRight: { alignItems: 'flex-end', justifyContent: 'flex-start' },
-  columnCenterLeft: { alignItems: 'flex-start', justifyContent: 'center' },
-  columnCenterRight: { alignItems: 'flex-end', justifyContent: 'center' },
-  columnBottomLeft: { alignItems: 'flex-start', justifyContent: 'flex-end' },
-  columnBottomCenter: { alignItems: 'center', justifyContent: 'flex-end' },
+  columnTopCenter: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center', justifyContent: 'flex-start' },
+  columnTopRight: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-end', justifyContent: 'flex-start' },
+  columnCenterLeft: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-start', justifyContent: 'center' },
+  columnCenterRight: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-end', justifyContent: 'center' },
+  columnBottomLeft: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'flex-start', justifyContent: 'flex-end' },
+  columnBottomCenter: { ...column, flexDirection: 'column', flexWrap: 'nowrap', alignItems: 'center', justifyContent: 'flex-end' },
 
-  rowTopCenter: { alignItems: 'flex-start', justifyContent: 'center' },
-  rowTopRight: { alignItems: 'flex-start', justifyContent: 'flex-end' },
-  rowCenterLeft: { alignItems: 'center', justifyContent: 'flex-start' },
-  rowCenterRight: { alignItems: 'center', justifyContent: 'flex-end' },
-  rowBottomLeft: { alignItems: 'flex-end', justifyContent: 'flex-start' },
-  rowBottomCenter: { alignItems: 'flex-end', justifyContent: 'center' },
+  rowTopCenter: { ...row, alignItems: 'flex-start', justifyContent: 'center' },
+  rowTopRight: { ...row, alignItems: 'flex-start', justifyContent: 'flex-end' },
+  rowCenterLeft: { ...row, alignItems: 'center', justifyContent: 'flex-start' },
+  rowCenterRight: { ...row, alignItems: 'center', justifyContent: 'flex-end' },
+  rowBottomLeft: { ...row, alignItems: 'flex-end', justifyContent: 'flex-start' },
+  rowBottomCenter: { ...row, alignItems: 'flex-end', justifyContent: 'center' },
 
   // ====================================================
   // Flex Item Alignment
