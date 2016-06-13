@@ -21,5 +21,6 @@ export default {
   imgStretch: { resizeMode: 'stretch' },
 
   // element width
-  fullWidth: { width: Dimensions.get('window').width }
+  fullWidth: { width: Dimensions.get('window').width },
+  minWidth: 1/PixelRatio.get()
 }
